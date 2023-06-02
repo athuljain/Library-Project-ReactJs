@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import './App.css';
+import FrontPage from './Component/FrontPage';
+import AddBook from './Component/AddBook';
+import Library from './Component/Library';
+import { LibraryContext } from './Component/Context';
+import { useState } from 'react';
 
 function App() {
+  
+  const [formData,setFormData]= useState([])
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <LibraryContext.Provider value={{formData, setFormData}} >
+      <Routes>
+        <Route path='/' Component={FrontPage}/>
+        <Route path='/addbook' Component={AddBook} />
+        <Route path='/library/:id' Component={Library} />
+      
+      </Routes>
+      </LibraryContext.Provider>
+      </BrowserRouter>
     </div>
   );
 }

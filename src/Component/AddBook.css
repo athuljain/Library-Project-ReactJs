@@ -1,0 +1,61 @@
+.Addbook {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .AddBookHeading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .AddBookFrom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .AddBookTitle,
+  .AddBookAuthor,
+  .AddBookCategory,
+  .AddBookBookNo {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+  }
+  
+  .AddBookInputTitle,
+  .AddBookInputAuthor,
+  .AddBookInputCategory,
+  .AddBookInputBookNo {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .AddBookInputTitle::placeholder,
+  .AddBookInputAuthor::placeholder,
+  .AddBookInputCategory::placeholder,
+  .AddBookInputBookNo::placeholder {
+    color: #999;
+  }
+  
+  .AddBookSumbitButton {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddBookSumbitButton:hover {
+    background-color: #0d8bf2;
+  }
+  

@@ -1,0 +1,35 @@
+.FrontPage {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .FrontPageHeading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .FrontPageOrderdList {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .FrontPageLi {
+    font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .FrontPageAddButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .FrontPageAddButton:hover {
+    background-color: #45a049;
+  }
+  

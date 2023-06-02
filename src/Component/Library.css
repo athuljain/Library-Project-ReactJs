@@ -1,0 +1,28 @@
+.Library {
+    margin: 20px;
+  }
+  
+  .LibraryH1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .LibraryBody {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .BookTitle {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .BookAuthor,
+  .BookCategory,
+  .BookNumber {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
