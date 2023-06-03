@@ -1,4 +1,4 @@
-import React, { useContext,useRef } from "react";
+import React, { useContext,useRef,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { LibraryContext } from "./Context";
 import './AddBook.css'
@@ -29,6 +29,9 @@ const AddBook=()=>{
         navigate("/")
     }
     
+    useEffect(()=>{
+        inputRef.current.title.focus()
+    })
 
     return(
         <div className="Addbook">
